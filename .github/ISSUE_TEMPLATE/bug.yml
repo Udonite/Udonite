@@ -1,0 +1,49 @@
+name: Bug
+description: Something compiles but behaves wrong in Play mode or in a world.
+labels: [bug]
+body:
+  - type: input
+    id: udonite
+    attributes:
+      label: Udonite version
+      description: From the Creator Companion, or the release you installed.
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: sdk
+    attributes:
+      label: VRChat Worlds SDK version
+      placeholder: 3.10.x
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where it happens
+      options:
+        - Play mode in the editor
+        - In an uploaded world
+        - Both
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: Smallest script that shows it
+      description: Trim it to the behaviour that misbehaves. Paste as code.
+      render: csharp
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: Console output
+      description: The Udonite compile line and anything logged around the problem.
+      render: text

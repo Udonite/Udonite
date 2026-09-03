@@ -1,0 +1,103 @@
+English | [日本語](README.ja.md) | [简体中文](README.zh-CN.md) | [한국어](README.ko.md)
+
+# Udonite
+
+**VRChat world scripting that feels like normal Unity C#.**
+
+Write a `MonoBehaviour` and Udonite compiles it to Udon. No dialect to learn and no list of forbidden keywords to memorise: the C# you already write in Unity is the C# that runs in your world.
+
+Udonite is free, networking included.
+
+[![Discord](https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white)](https://discord.gg/8B4q7w6WCq)
+
+## Install
+
+1. Open the VRChat Creator Companion, go to **Settings → Packages → Add Repository**.
+2. Paste `https://udonite.github.io/vpm/index.json` and click **Add**.
+3. Open your world project and add **Udonite** from the package list.
+
+Or press **Add to VCC** on the [listing page](https://udonite.github.io/vpm/).
+
+Requires the VRChat Worlds SDK 3.10 or newer and Unity 2022.3. Nothing else to install: the package carries its own compiler libraries.
+
+## Use
+
+Write a `MonoBehaviour` and press Play. Udonite compiles every behaviour in the project, attaches the Udon program next to it, and logs one line per compile. In Play mode the Udon program is what runs, so what you see in the editor is what ships.
+
+Deriving from `UdoniteBehaviour` instead is optional, and a little easier: VRChat events become `virtual` methods you `override`, so a misspelt event name is a compile error rather than a method that never runs, and the synced-field attributes and VRChat helper methods come with it.
+
+## What you can write
+
+- **The language, not a subset.** Generics with constraints, interfaces with default methods, records, structs, nested classes, extension methods, tuples and deconstruction, local functions, `params` and optional arguments.
+- **Modern C# syntax.** Switch expressions, pattern matching (`is > 5 and < 10`, property patterns, `is not null`), `?.`, `??=`, string interpolation with format specifiers, ranges and indices.
+- **Collections and LINQ.** `List<T>`, `Dictionary<K,V>`, `HashSet<T>`, `Queue<T>`, `Stack<T>`, multidimensional arrays, and LINQ chains (`Where`, `Select`, `OrderBy`, `GroupBy`, `Zip`, and the rest) with the lambdas compiled in place.
+- **Delegates and events.** `Action` and `Func` fields, method groups, `+=` and `-=` on multicast delegates, C# `event` declarations with `?.Invoke`, lambdas as values.
+- **Time, the normal way.** Coroutines with `yield return new WaitForSeconds(...)`, `async` methods with `await Task.Delay(...)`, `Invoke` and `InvokeRepeating`.
+- **Networking with payloads.** Synced fields with change callbacks, custom events by name, and typed network events: declare a class with fields, send it with `Network.Send(evt, receiver)`, receive it in a method that takes the event as a parameter. A `NetworkTransform` component syncs position, rotation and scale out of the box.
+- **Nullable values, `TryGetComponent`, `StringBuilder`, `Array.FindAll`,** and the other small things you reach for without thinking.
+
+```csharp
+using System.Collections.Generic;
+using System.Linq;
+using Udonite.Package.Runtime;
+using UnityEngine;
+
+public class ScoreEvent : NetworkEvent
+{
+    public int player;
+    public int points;
+
+    public void Serialize(ByteWriter writer) => writer.WriteInt32(player).WriteInt32(points);
+    public void Deserialize(ByteReader reader) { player = reader.ReadInt32(); points = reader.ReadInt32(); }
+}
+
+public class Scoreboard : UdoniteBehaviour
+{
+    public event System.Action<int> Changed;
+    private readonly Dictionary<int, int> totals = new Dictionary<int, int>();
+
+    public void Award(int player, int points) => Udonite.Network.Send(new ScoreEvent { player = player, points = points }, this);
+
+    [NetworkEventHandler]
+    public void OnScore(ScoreEvent evt)
+    {
+        totals.TryGetValue(evt.player, out int current);
+        totals[evt.player] = current + evt.points;
+        Changed?.Invoke(evt.player);
+    }
+
+    public string Leader() => totals.OrderByDescending(pair => pair.Value).Select(pair => pair.Key.ToString()).FirstOrDefault() ?? "nobody";
+}
+```
+
+## What Udonite will not do
+
+Udon has real limits: no exceptions, no mutable statics, no `Awake`, no tags. Udonite refuses those by name. Every refusal is a console line with a `UDN` code that says what was refused and what to write instead; nothing is dropped silently. A refused behaviour gets no program, the rest of your project still compiles. Details in [Language support](docs/language-support.md).
+
+## Documentation
+
+**[udonite.dajno.com](https://udonite.dajno.com)** has all of it, searchable, in four languages.
+
+- [Getting started](docs/getting-started.md)
+- [Language support](docs/language-support.md)
+- [Networking](docs/networking.md)
+- [Migrating from UdonSharp](docs/migrating-from-udonsharp.md)
+- [Diagnostics](docs/diagnostics.md)
+
+## Supporting Udonite
+
+The Udonite compiler is free and always will be.
+
+Udonite is built and maintained by one person, through every VRChat SDK update that breaks something. Supporting funds that work, and the packages built on top of it: reusable systems for VRChat worlds. **None have shipped yet;** supporters get each one as it arrives.
+
+[Become a supporter](https://buy.polar.sh/polar_cl_fiMBXRqzbvm0c8qt6xqKKBGbaB0FOQmPMddgn06PRsC) · [see what is being considered](docs/packages.md)
+
+## Issues
+
+Questions, help and general chat happen on [Discord](https://discord.gg/8B4q7w6WCq).
+
+Bugs, refused constructs you think should compile, and SDK breakage belong in Issues rather than chat, where they scroll away and get lost.
+
+Bugs, refused constructs you think should compile, and SDK breakage go in [Issues](https://github.com/Udonite/Udonite/issues). Include the refusal line from the console; it names the exact construct.
+
+Udonite is a third-party tool and is not affiliated with VRChat Inc.

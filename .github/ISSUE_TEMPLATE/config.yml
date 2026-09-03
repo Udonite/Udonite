@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://github.com/Udonite/Udonite/tree/main/docs
+    about: Getting started, language support, networking, diagnostics.
+  - name: Questions, ideas and showing off a world
+    url: https://github.com/Udonite/Udonite/discussions
+    about: Ask how to do something, suggest a feature, or share what you built.

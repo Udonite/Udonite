@@ -1,0 +1,26 @@
+name: SDK breakage
+description: A VRChat SDK or Unity update broke Udonite.
+labels: [bug]
+body:
+  - type: input
+    id: sdk
+    attributes:
+      label: New VRChat Worlds SDK version
+      placeholder: 3.11.0
+    validations:
+      required: true
+  - type: input
+    id: udonite
+    attributes:
+      label: Udonite version
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: Console output after the update
+      description: Errors from the domain reload and the first Udonite compile.
+      render: text
+    validations:
+      required: true

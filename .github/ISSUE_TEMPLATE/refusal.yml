@@ -1,0 +1,33 @@
+name: Refused construct
+description: Udonite refused something you think should compile.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: line
+    attributes:
+      label: The refusal line from the console
+      description: Paste it whole. It names the construct and the UDN code.
+      placeholder: "Door.cs(14,9): error UDN0005: Udonite does not support ..."
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: The code it refused
+      description: The smallest script that produces the refusal.
+      render: csharp
+    validations:
+      required: true
+  - type: input
+    id: udonite
+    attributes:
+      label: Udonite version
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: What you are trying to do
+      description: Optional. Knowing the goal helps when the construct itself cannot be supported and a different shape can.
