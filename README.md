@@ -8,8 +8,6 @@ Write a `MonoBehaviour` and Udonite compiles it to Udon. No dialect to learn and
 
 Udonite is free, networking included.
 
-[![Discord](https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white)](https://discord.gg/8B4q7w6WCq)
-
 ## Install
 
 1. Open the VRChat Creator Companion, go to **Settings → Packages → Add Repository**.
@@ -98,10 +96,6 @@ Otherwise take the compiler and owe nothing.
 [Become a supporter](https://buy.polar.sh/polar_cl_fiMBXRqzbvm0c8qt6xqKKBGbaB0FOQmPMddgn06PRsC)
 
 ## Issues
-
-Questions, help and general chat happen on [Discord](https://discord.gg/8B4q7w6WCq).
-
-Bugs, refused constructs you think should compile, and SDK breakage belong in Issues rather than chat, where they scroll away and get lost.
 
 Bugs, refused constructs you think should compile, and SDK breakage go in [Issues](https://github.com/Udonite/Udonite/issues). Include the refusal line from the console; it names the exact construct.
 

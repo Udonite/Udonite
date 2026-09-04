@@ -8,8 +8,6 @@
 
 Udonite는 무료이며, 네트워크 기능도 포함되어 있습니다.
 
-[![Discord](https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white)](https://discord.gg/8B4q7w6WCq)
-
 ## 설치
 
 1. VRChat Creator Companion을 열고 **Settings → Packages → Add Repository**로 이동합니다.
@@ -97,10 +95,6 @@ Udonite는 한 사람이 만들고 유지보수합니다. VRChat SDK가 갱신�
 [후원하기](https://buy.polar.sh/polar_cl_fiMBXRqzbvm0c8qt6xqKKBGbaB0FOQmPMddgn06PRsC)
 
 ## 문제 제보
-
-질문이나 잡담은 [Discord](https://discord.gg/8B4q7w6WCq)로 오세요. 한국어로 하셔도 괜찮습니다.
-
-버그, 컴파일되어야 한다고 생각하는데 거부된 문법, SDK 업데이트로 인한 문제는 채팅에 묻히지 않도록 Issues에 남겨 주세요.
 
 버그, 컴파일되어야 한다고 생각하는데 거부된 문법, SDK 업데이트로 인한 문제는 [Issues](https://github.com/Udonite/Udonite/issues)로 보내 주세요. 한국어로 적으셔도 괜찮습니다. 콘솔에 나온 거부 줄을 그대로 붙여 주시면 어떤 문법인지 정확히 알 수 있습니다.
 
