@@ -70,17 +70,17 @@ public class Scoreboard : UdoniteBehaviour
 
 ## できないこと
 
-Udon には実際の制約があります。例外なし、書き換え可能な static なし、`Awake` なし、タグなし。Udonite はそれらを名指しで拒否します。拒否はコンソールに 1 行出て、`UDN` コードとともに「何が拒否されたか」と「代わりに何を書けばよいか」を示します。黙って無視されるものはありません。拒否されたビヘイビアはプログラムを持ちませんが、プロジェクト内の他のビヘイビアは通常どおりコンパイルされます。詳細は[対応状況](docs/language-support.md)（英語）を参照してください。
+Udon には実際の制約があります。例外なし、書き換え可能な static なし、`Awake` なし、タグなし。Udonite はそれらを名指しで拒否します。拒否はコンソールに 1 行出て、`UDN` コードとともに「何が拒否されたか」と「代わりに何を書けばよいか」を示します。黙って無視されるものはありません。拒否されたビヘイビアはプログラムを持ちませんが、プロジェクト内の他のビヘイビアは通常どおりコンパイルされます。詳細は[対応状況](https://docs.udonite.com/compiler/language-support?lang=ja)（英語）を参照してください。
 
 ## ドキュメント
 
 **[docs.udonite.com](https://docs.udonite.com/?lang=ja)** に日本語のドキュメントが揃っています。検索もできます。
 
-- [はじめかた](docs/getting-started.ja.md)（日本語）
-- [対応状況](docs/language-support.md)（英語）
-- [ネットワーク](docs/networking.md)（英語）
-- [UdonSharp からの移行](docs/migrating-from-udonsharp.md)（英語）
-- [診断コード](docs/diagnostics.md)（英語）
+- [はじめかた](https://docs.udonite.com/compiler/getting-started?lang=ja)
+- [対応状況](https://docs.udonite.com/compiler/language-support?lang=ja)
+- [ネットワーク](https://docs.udonite.com/compiler/networking?lang=ja)
+- [UdonSharp からの移行](https://docs.udonite.com/compiler/migrating-from-udonsharp?lang=ja)
+- [診断コード](https://docs.udonite.com/compiler/diagnostics?lang=ja)
 
 日本語版は README と「はじめかた」のみです。他のページは更新が多く、古い翻訳は誤解のもとになるため、あえて英語のままにしています。
 
