@@ -8,7 +8,7 @@
 
 Udonite は無料です。ネットワーク機能も含みます。
 
-**[ドキュメント](https://docs.udonite.com/?lang=ja)** · **[インストール](https://udonite.com/?lang=ja)**
+**[ドキュメント](https://docs.udonite.com/compiler?lang=ja)** · **[インストール](https://udonite.com/?lang=ja)**
 
 ## 使い方
 

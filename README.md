@@ -8,7 +8,7 @@ Write a `MonoBehaviour` and Udonite compiles it to Udon. No dialect to learn and
 
 Udonite is free, networking included.
 
-**[Documentation](https://docs.udonite.com)** · **[Install](https://udonite.com)**
+**[Documentation](https://docs.udonite.com/compiler)** · **[Install](https://udonite.com)**
 
 ## Use
 

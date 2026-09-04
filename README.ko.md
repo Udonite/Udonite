@@ -8,7 +8,7 @@
 
 Udonite는 무료이며, 네트워크 기능도 포함되어 있습니다.
 
-**[문서](https://docs.udonite.com/?lang=ko)** · **[설치](https://udonite.com/?lang=ko)**
+**[문서](https://docs.udonite.com/compiler?lang=ko)** · **[설치](https://udonite.com/?lang=ko)**
 
 ## 사용법
 

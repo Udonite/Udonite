@@ -8,7 +8,7 @@
 
 Udonite 是免费的，网络功能也包含在内。
 
-**[文档](https://docs.udonite.com/?lang=zh)** · **[安装](https://udonite.com/?lang=zh)**
+**[文档](https://docs.udonite.com/compiler?lang=zh)** · **[安装](https://udonite.com/?lang=zh)**
 
 ## 使用
 
