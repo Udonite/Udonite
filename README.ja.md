@@ -74,7 +74,7 @@ Udon には実際の制約があります。例外なし、書き換え可能な
 
 ## ドキュメント
 
-**[udonite.dajno.com](https://udonite.dajno.com/?lang=ja)** に日本語のドキュメントが揃っています。検索もできます。
+**[docs.udonite.com](https://docs.udonite.com/?lang=ja)** に日本語のドキュメントが揃っています。検索もできます。
 
 - [はじめかた](docs/getting-started.ja.md)（日本語）
 - [対応状況](docs/language-support.md)（英語）

@@ -74,7 +74,7 @@ Udon 有一些真实存在的限制：没有异常、没有可变的静态字段
 
 ## 文档
 
-**[udonite.dajno.com](https://udonite.dajno.com/?lang=zh)** 上有完整的中文文档，并且可以搜索。
+**[docs.udonite.com](https://docs.udonite.com/?lang=zh)** 上有完整的中文文档，并且可以搜索。
 
 - [快速开始](docs/getting-started.zh-CN.md)（中文）
 - [语言支持](docs/language-support.md)（英文）

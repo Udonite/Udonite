@@ -74,7 +74,7 @@ Udon has real limits: no exceptions, no mutable statics, no `Awake`, no tags. Ud
 
 ## Documentation
 
-**[udonite.dajno.com](https://udonite.dajno.com)** has all of it, searchable, in four languages.
+**[docs.udonite.com](https://docs.udonite.com)** has all of it, searchable, in four languages.
 
 - [Getting started](docs/getting-started.md)
 - [Language support](docs/language-support.md)

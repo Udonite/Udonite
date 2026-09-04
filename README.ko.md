@@ -74,7 +74,7 @@ Udon에는 실제로 존재하는 제약이 있습니다. 예외 없음, 변경 
 
 ## 문서
 
-**[udonite.dajno.com](https://udonite.dajno.com/?lang=ko)** 에 한국어 문서가 모두 있고 검색도 됩니다.
+**[docs.udonite.com](https://docs.udonite.com/?lang=ko)** 에 한국어 문서가 모두 있고 검색도 됩니다.
 
 - [시작하기](docs/getting-started.ko.md)(한국어)
 - [언어 지원](docs/language-support.md)(영어)
