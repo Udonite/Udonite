@@ -86,13 +86,13 @@ Udon 有一些真实存在的限制：没有异常、没有可变的静态字段
 
 ## 支持 Udonite
 
-Udonite 编译器是免费的，而且永远都会是免费的。
+Udonite 编译器是免费的，而且永远都会是免费的。它由一个人开发和维护，包括每次 VRChat SDK 更新弄坏东西之后的修复。
 
-Udonite 由一个人开发和维护，包括每次 VRChat SDK 更新弄坏东西之后的修复。你的支持资助这项工作，以及围绕它构建的服务。
+你的支持资助这项工作，而现在也会带来世界里真正用得上的东西。Udonite 提供世界通过 URL 调用的托管服务：从世界向 Discord 或 Pushover 发送消息，并保存计数器、成绩表或共享开关 —— 即使所有人都离开也不会丢失。两者都可以免费试用，成为支持者会把各项上限提高到你基本不会碰到的程度。
 
-支持不会带来任何回报。没有支持者等级，没有私有包，也没有任何受限的功能，所有内容对所有人都是免费的。如果你希望这项工作继续下去，就支持它；否则，请自由使用编译器，不必有任何负担。
+编译器不在其中。它对所有人都免费，SDK 更新导致的问题也会在同一天修复给所有人。
 
-[成为支持者](https://buy.polar.sh/polar_cl_fiMBXRqzbvm0c8qt6xqKKBGbaB0FOQmPMddgn06PRsC)
+[成为支持者](https://buy.polar.sh/polar_cl_fiMBXRqzbvm0c8qt6xqKKBGbaB0FOQmPMddgn06PRsC) · [服务介绍](https://udonite.com/?lang=zh)
 
 ## 问题反馈
 

@@ -84,16 +84,18 @@ Udon has real limits: no exceptions, no mutable statics, no `Awake`, no tags. Ud
 
 ## Supporting Udonite
 
-The Udonite compiler is free and always will be.
+The Udonite compiler is free and always will be. It is built and maintained by one person, through
+every VRChat SDK update that breaks something.
 
-It is built and maintained by one person, through every VRChat SDK update that breaks something.
-Supporting funds that work and the services being built around it.
+Supporting funds that work, and it now gets you something a world can use. Udonite runs hosted
+services your worlds call by URL: send a message from a world into Discord or Pushover, and keep a
+counter, a score table or a shared switch that survives everyone leaving. Both are free to try, and
+supporting raises every limit to somewhere you will not meet them.
 
-You get nothing for it. There is no supporter tier, no private packages and no gated features -
-everything here is free to everyone either way. Support it if you want the work to continue.
-Otherwise take the compiler and owe nothing.
+The compiler is never part of that. It is free to everyone either way, and fixes for SDK breakage
+ship to everyone the same day.
 
-[Become a supporter](https://buy.polar.sh/polar_cl_fiMBXRqzbvm0c8qt6xqKKBGbaB0FOQmPMddgn06PRsC)
+[Become a supporter](https://buy.polar.sh/polar_cl_fiMBXRqzbvm0c8qt6xqKKBGbaB0FOQmPMddgn06PRsC) · [What the services do](https://udonite.com)
 
 ## Issues
 
