@@ -8,6 +8,8 @@
 
 Udonite は無料です。ネットワーク機能も含みます。
 
+ワールドから [Udonite のホスティングサービス](https://admin.udonite.com)を呼び出すこともできます。ワールドから Discord や Pushover にメッセージを送ったり、カウンターやスコア表、共有スイッチを全員が退出したあとも残したりできます。GitHub アカウントがあれば無料で試せます。
+
 **[ドキュメント](https://docs.udonite.com/compiler?lang=ja)** · **[インストール](https://udonite.com/?lang=ja)**
 
 ## 使い方

@@ -8,6 +8,8 @@
 
 Udonite는 무료이며, 네트워크 기능도 포함되어 있습니다.
 
+월드에서 [Udonite 호스팅 서비스](https://admin.udonite.com)를 호출할 수도 있습니다. 월드에서 Discord나 Pushover로 메시지를 보내고, 카운터와 점수표, 공유 스위치를 모두가 나간 뒤에도 남길 수 있습니다. GitHub 계정만 있으면 무료로 써 볼 수 있습니다.
+
 **[문서](https://docs.udonite.com/compiler?lang=ko)** · **[설치](https://udonite.com/?lang=ko)**
 
 ## 사용법

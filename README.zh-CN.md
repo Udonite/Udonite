@@ -8,6 +8,8 @@
 
 Udonite 是免费的，网络功能也包含在内。
 
+世界还可以调用 [Udonite 的托管服务](https://admin.udonite.com)：从世界向 Discord 或 Pushover 发送消息，并保存计数器、成绩表或共享开关 —— 即使所有人都离开也不会丢失。有 GitHub 账号就能免费试用。
+
 **[文档](https://docs.udonite.com/compiler?lang=zh)** · **[安装](https://udonite.com/?lang=zh)**
 
 ## 使用
