@@ -8,6 +8,8 @@
 
 Udonite 是免费的，网络功能也包含在内。
 
+**[文档](https://docs.udonite.com/?lang=zh)**
+
 ## 安装
 
 1. 打开 VRChat Creator Companion，进入 **Settings → Packages → Add Repository**。
@@ -71,18 +73,6 @@ public class Scoreboard : UdoniteBehaviour
 ## Udonite 不会做什么
 
 Udon 有一些真实存在的限制：没有异常、没有可变的静态字段、没有 `Awake`、没有 tag。Udonite 会明确地拒绝这些写法。每一次拒绝都是控制台里的一行，带一个 `UDN` 代码，说明拒绝了什么、以及应该改写成什么；不会有任何东西被悄悄丢掉。被拒绝的 behaviour 不会生成 Udon 程序，项目里其余的部分照常编译。详见[语言支持](https://docs.udonite.com/compiler/language-support?lang=zh)（英文）。
-
-## 文档
-
-**[docs.udonite.com](https://docs.udonite.com/?lang=zh)** 上有完整的中文文档，并且可以搜索。
-
-- [快速开始](https://docs.udonite.com/compiler/getting-started?lang=zh)
-- [语言支持](https://docs.udonite.com/compiler/language-support?lang=zh)
-- [网络](https://docs.udonite.com/compiler/networking?lang=zh)
-- [从 UdonSharp 迁移](https://docs.udonite.com/compiler/migrating-from-udonsharp?lang=zh)
-- [诊断代码](https://docs.udonite.com/compiler/diagnostics?lang=zh)
-
-中文版只有 README 和「快速开始」这两页。其余页面更新频繁，过时的翻译比英文更容易误导人，因此特意保持英文。
 
 ## 支持 Udonite
 

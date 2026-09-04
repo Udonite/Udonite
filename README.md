@@ -8,6 +8,8 @@ Write a `MonoBehaviour` and Udonite compiles it to Udon. No dialect to learn and
 
 Udonite is free, networking included.
 
+**[Documentation](https://docs.udonite.com)**
+
 ## Install
 
 1. Open the VRChat Creator Companion, go to **Settings → Packages → Add Repository**.
@@ -71,16 +73,6 @@ public class Scoreboard : UdoniteBehaviour
 ## What Udonite will not do
 
 Udon has real limits: no exceptions, no mutable statics, no `Awake`, no tags. Udonite refuses those by name. Every refusal is a console line with a `UDN` code that says what was refused and what to write instead; nothing is dropped silently. A refused behaviour gets no program, the rest of your project still compiles. Details in [Language support](https://docs.udonite.com/compiler/language-support).
-
-## Documentation
-
-**[docs.udonite.com](https://docs.udonite.com)** has all of it, searchable, in four languages.
-
-- [Getting started](https://docs.udonite.com/compiler/getting-started)
-- [Language support](https://docs.udonite.com/compiler/language-support)
-- [Networking](https://docs.udonite.com/compiler/networking)
-- [Migrating from UdonSharp](https://docs.udonite.com/compiler/migrating-from-udonsharp)
-- [Diagnostics](https://docs.udonite.com/compiler/diagnostics)
 
 ## Supporting Udonite
 
