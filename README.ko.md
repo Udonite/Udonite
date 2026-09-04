@@ -14,7 +14,7 @@ Udonite는 무료이며, 네트워크 기능도 포함되어 있습니다.
 
 ## 사용법
 
-`MonoBehaviour`를 작성하고 Play를 누르면 됩니다. Udonite는 프로젝트 안의 모든 behaviour를 컴파일해 같은 GameObject에 Udon 프로그램을 붙이고, 컴파일마다 한 줄씩 로그를 남깁니다. Play 모드에서 실제로 도는 것은 Udon 프로그램 자체이므로, 에디터에서 보고 있는 것이 곧 업로드되는 것입니다.
+`MonoBehaviour`를 작성하고 저장하면 됩니다. Udonite는 Unity가 스크립트를 다시 컴파일할 때와 씬을 저장할 때 컴파일하고, 각 behaviour와 같은 GameObject에 Udon 프로그램을 붙이며, 무언가를 거부할 때가 아니면 아무것도 출력하지 않습니다. Play 모드에서 실제로 도는 것은 Udon 프로그램 자체이므로, 에디터에서 보고 있는 것이 곧 업로드되는 것입니다.
 
 `UdoniteBehaviour`를 상속하는 것은 선택이지만 조금 더 편합니다. VRChat 이벤트가 `override` 가능한 `virtual` 메서드가 되므로, 이벤트 이름을 잘못 쓰면 "호출되지 않는 메서드"가 아니라 컴파일 오류가 됩니다. 동기화 필드 어트리뷰트와 VRChat 헬퍼 메서드도 함께 딸려 옵니다.
 
@@ -64,7 +64,7 @@ public class Scoreboard : UdoniteBehaviour
 
 ## Udonite가 하지 않는 것
 
-Udon에는 실제로 존재하는 제약이 있습니다. 예외 없음, 변경 가능한 static 없음, `Awake` 없음, 태그 없음. Udonite는 그런 것들을 이름을 짚어 거부합니다. 모든 거부는 콘솔의 한 줄로 나오며, `UDN` 코드와 함께 무엇이 거부되었는지와 대신 무엇을 쓰면 되는지를 알려 줍니다. 조용히 사라지는 것은 없습니다. 거부된 behaviour는 프로그램을 갖지 못하지만, 프로젝트의 나머지는 평소대로 컴파일됩니다. 자세한 내용은 [언어 지원](https://docs.udonite.com/compiler/language-support?lang=ko)(영어)을 참고하세요.
+Udon에는 실제로 존재하는 제약이 있습니다. `catch`할 예외 없음, 변경 가능한 static 없음, `Awake` 없음, 태그 없음. Udonite는 그런 것들을 이름을 짚어 거부합니다. 모든 거부는 콘솔의 한 줄로 나오며, `UDN` 코드와 함께 무엇이 거부되었는지와 대신 무엇을 쓰면 되는지를 알려 줍니다. 조용히 사라지는 것은 없습니다. 거부된 behaviour는 프로그램을 갖지 못하지만, 프로젝트의 나머지는 평소대로 컴파일됩니다. 자세한 내용은 [언어 지원](https://docs.udonite.com/compiler/language-support?lang=ko)(영어)을 참고하세요.
 
 ## Udonite 후원하기
 

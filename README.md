@@ -16,7 +16,7 @@ Free to try with a GitHub account.
 
 ## Use
 
-Write a `MonoBehaviour` and press Play. Udonite compiles every behaviour in the project, attaches the Udon program next to it, and logs one line per compile. In Play mode the Udon program is what runs, so what you see in the editor is what ships.
+Write a `MonoBehaviour` and save. Udonite compiles whenever Unity recompiles scripts or a scene is saved, attaches the Udon program next to each behaviour, and says nothing unless it refuses something. In Play mode the Udon program is what runs, so what you see in the editor is what ships.
 
 Deriving from `UdoniteBehaviour` instead is optional, and a little easier: VRChat events become `virtual` methods you `override`, so a misspelt event name is a compile error rather than a method that never runs, and the synced-field attributes and VRChat helper methods come with it.
 
@@ -66,7 +66,7 @@ public class Scoreboard : UdoniteBehaviour
 
 ## What Udonite will not do
 
-Udon has real limits: no exceptions, no mutable statics, no `Awake`, no tags. Udonite refuses those by name. Every refusal is a console line with a `UDN` code that says what was refused and what to write instead; nothing is dropped silently. A refused behaviour gets no program, the rest of your project still compiles. Details in [Language support](https://docs.udonite.com/compiler/language-support).
+Udon has real limits: nothing to `catch`, no mutable statics, no `Awake`, no tags. Udonite refuses those by name. Every refusal is a console line with a `UDN` code that says what was refused and what to write instead; nothing is dropped silently. A refused behaviour gets no program, the rest of your project still compiles. Details in [Language support](https://docs.udonite.com/compiler/language-support).
 
 ## Supporting Udonite
 

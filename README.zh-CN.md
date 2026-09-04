@@ -14,7 +14,7 @@ Udonite 是免费的，网络功能也包含在内。
 
 ## 使用
 
-写一个 `MonoBehaviour`，然后按 Play。Udonite 会编译项目中的每一个 behaviour，把 Udon 程序附加到同一个 GameObject 上，并为每次编译输出一行日志。Play 模式下运行的就是 Udon 程序本身，所以你在编辑器里看到的，就是最终上传的东西。
+写一个 `MonoBehaviour`，然后保存。Udonite 会在 Unity 重新编译脚本或场景保存时编译，把 Udon 程序附加到每个 behaviour 所在的 GameObject 上，除非拒绝了某个写法，否则不会输出任何内容。Play 模式下运行的就是 Udon 程序本身，所以你在编辑器里看到的，就是最终上传的东西。
 
 继承 `UdoniteBehaviour` 是可选的，但会省事一些：VRChat 事件会变成可以 `override` 的 `virtual` 方法，所以事件名拼错会变成编译错误，而不是一个永远不会被调用的方法；同步字段的特性和 VRChat 辅助方法也会一并附带。
 
@@ -64,7 +64,7 @@ public class Scoreboard : UdoniteBehaviour
 
 ## Udonite 不会做什么
 
-Udon 有一些真实存在的限制：没有异常、没有可变的静态字段、没有 `Awake`、没有 tag。Udonite 会明确地拒绝这些写法。每一次拒绝都是控制台里的一行，带一个 `UDN` 代码，说明拒绝了什么、以及应该改写成什么；不会有任何东西被悄悄丢掉。被拒绝的 behaviour 不会生成 Udon 程序，项目里其余的部分照常编译。详见[语言支持](https://docs.udonite.com/compiler/language-support?lang=zh)（英文）。
+Udon 有一些真实存在的限制：没有可以 `catch` 的异常、没有可变的静态字段、没有 `Awake`、没有 tag。Udonite 会明确地拒绝这些写法。每一次拒绝都是控制台里的一行，带一个 `UDN` 代码，说明拒绝了什么、以及应该改写成什么；不会有任何东西被悄悄丢掉。被拒绝的 behaviour 不会生成 Udon 程序，项目里其余的部分照常编译。详见[语言支持](https://docs.udonite.com/compiler/language-support?lang=zh)（英文）。
 
 ## 支持 Udonite
 
