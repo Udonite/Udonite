@@ -8,17 +8,7 @@
 
 Udonite 是免费的，网络功能也包含在内。
 
-**[文档](https://docs.udonite.com/?lang=zh)**
-
-## 安装
-
-1. 打开 VRChat Creator Companion，进入 **Settings → Packages → Add Repository**。
-2. 粘贴 `https://udonite.github.io/vpm/index.json`，点击 **Add**。
-3. 打开你的世界项目，从包列表中添加 **Udonite**。
-
-或者在[列表页面](https://udonite.github.io/vpm/)上点击 **Add to VCC**。
-
-需要 VRChat Worlds SDK 3.10 或更高版本，以及 Unity 2022.3。除此之外不需要安装任何东西：编译器依赖的库已经打包在内。
+**[文档](https://docs.udonite.com/?lang=zh)** · **[安装](https://udonite.com/?lang=zh)**
 
 ## 使用
 

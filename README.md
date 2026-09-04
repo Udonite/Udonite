@@ -8,17 +8,7 @@ Write a `MonoBehaviour` and Udonite compiles it to Udon. No dialect to learn and
 
 Udonite is free, networking included.
 
-**[Documentation](https://docs.udonite.com)**
-
-## Install
-
-1. Open the VRChat Creator Companion, go to **Settings → Packages → Add Repository**.
-2. Paste `https://udonite.github.io/vpm/index.json` and click **Add**.
-3. Open your world project and add **Udonite** from the package list.
-
-Or press **Add to VCC** on the [listing page](https://udonite.github.io/vpm/).
-
-Requires the VRChat Worlds SDK 3.10 or newer and Unity 2022.3. Nothing else to install: the package carries its own compiler libraries.
+**[Documentation](https://docs.udonite.com)** · **[Install](https://udonite.com)**
 
 ## Use
 
