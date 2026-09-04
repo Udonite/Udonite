@@ -1,5 +1,5 @@
 name: Bug
-description: Something compiles but behaves wrong in Play mode or in a world.
+description: Udonite compiled something wrong, refused something it should accept, or stopped working after an update.
 labels: [bug]
 body:
   - type: input
@@ -17,33 +17,23 @@ body:
       placeholder: 3.10.x
     validations:
       required: true
-  - type: dropdown
-    id: where
-    attributes:
-      label: Where it happens
-      options:
-        - Play mode in the editor
-        - In an uploaded world
-        - Both
-    validations:
-      required: true
   - type: textarea
-    id: code
+    id: what
     attributes:
-      label: Smallest script that shows it
-      description: Trim it to the behaviour that misbehaves. Paste as code.
-      render: csharp
-    validations:
-      required: true
-  - type: textarea
-    id: expected
-    attributes:
-      label: What you expected, and what happened instead
+      label: What happened, and what you expected instead
     validations:
       required: true
   - type: textarea
     id: console
     attributes:
       label: Console output
-      description: The Udonite compile line and anything logged around the problem.
+      description: The Udonite compile line and anything logged around it. A refusal names the construct and its UDN code, which is usually the whole answer.
       render: text
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: Smallest script that shows it
+      description: Optional, and the single most useful thing you can add. Trim it to the behaviour that misbehaves.
+      render: csharp

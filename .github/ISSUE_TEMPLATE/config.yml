@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Documentation
-    url: https://github.com/Udonite/Udonite/tree/main/docs
+    url: https://docs.udonite.com/compiler
     about: Getting started, language support, networking, diagnostics.
   - name: Questions, ideas and showing off a world
     url: https://github.com/Udonite/Udonite/discussions
