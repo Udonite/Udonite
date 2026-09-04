@@ -7,6 +7,5 @@ Udonite compiles ordinary Unity C# to Udon for VRChat worlds. These pages cover 
 - [Networking](networking.md): synced fields, custom events, typed network events, `NetworkTransform`.
 - [Migrating from UdonSharp](migrating-from-udonsharp.md): the changes a port needs.
 - [Diagnostics](diagnostics.md): every `UDN` code and what to do about it.
-- [Packages](packages.md): what is planned for supporters.
 
 Bugs, refusals you think should compile, and SDK breakage go in [Issues](https://github.com/Udonite/Udonite/issues). Paste the refusal line from the console; it names the exact construct.

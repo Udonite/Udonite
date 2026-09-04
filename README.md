@@ -88,9 +88,14 @@ Udon has real limits: no exceptions, no mutable statics, no `Awake`, no tags. Ud
 
 The Udonite compiler is free and always will be.
 
-Udonite is built and maintained by one person, through every VRChat SDK update that breaks something. Supporting funds that work, and the packages built on top of it: reusable systems for VRChat worlds. **None have shipped yet;** supporters get each one as it arrives.
+It is built and maintained by one person, through every VRChat SDK update that breaks something.
+Supporting funds that work and the services being built around it.
 
-[Become a supporter](https://buy.polar.sh/polar_cl_fiMBXRqzbvm0c8qt6xqKKBGbaB0FOQmPMddgn06PRsC) · [see what is being considered](docs/packages.md)
+You get nothing for it. There is no supporter tier, no private packages and no gated features -
+everything here is free to everyone either way. Support it if you want the work to continue.
+Otherwise take the compiler and owe nothing.
+
+[Become a supporter](https://buy.polar.sh/polar_cl_fiMBXRqzbvm0c8qt6xqKKBGbaB0FOQmPMddgn06PRsC)
 
 ## Issues
 
