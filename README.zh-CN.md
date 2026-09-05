@@ -8,9 +8,9 @@
 
 Udonite 是免费的，网络功能也包含在内。
 
-世界还可以调用 [Udonite 的托管服务](https://admin.udonite.com)：从世界向 Discord 或 Pushover 发送消息，并保存计数器、成绩表或共享开关 —— 即使所有人都离开也不会丢失。有 GitHub 账号就能免费试用。
+世界还可以调用 [Udonite 的托管服务](https://udonite.com/dashboard?lang=zh)：从世界向 Discord 或 Pushover 发送消息，并保存计数器、成绩表或共享开关 —— 即使所有人都离开也不会丢失。有 GitHub 账号就能免费试用。
 
-**[文档](https://docs.udonite.com/compiler?lang=zh)** · **[安装](https://udonite.com/?lang=zh)**
+**[文档](https://udonite.com/docs/compiler?lang=zh)** · **[安装](https://udonite.com/?lang=zh)**
 
 ## 使用
 
@@ -64,7 +64,7 @@ public class Scoreboard : UdoniteBehaviour
 
 ## Udonite 不会做什么
 
-Udon 有一些真实存在的限制：没有可以 `catch` 的异常、没有可变的静态字段、没有 `Awake`、没有 tag。Udonite 会明确地拒绝这些写法。每一次拒绝都是控制台里的一行，带一个 `UDN` 代码，说明拒绝了什么、以及应该改写成什么；不会有任何东西被悄悄丢掉。被拒绝的 behaviour 不会生成 Udon 程序，项目里其余的部分照常编译。详见[语言支持](https://docs.udonite.com/compiler/language-support?lang=zh)（英文）。
+Udon 有一些真实存在的限制：没有可以 `catch` 的异常、没有可变的静态字段、没有 `Awake`、没有 tag。Udonite 会明确地拒绝这些写法。每一次拒绝都是控制台里的一行，带一个 `UDN` 代码，说明拒绝了什么、以及应该改写成什么；不会有任何东西被悄悄丢掉。被拒绝的 behaviour 不会生成 Udon 程序，项目里其余的部分照常编译。详见[语言支持](https://udonite.com/docs/compiler/language-support?lang=zh)（英文）。
 
 ## 支持 Udonite
 

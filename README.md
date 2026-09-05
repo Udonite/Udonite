@@ -8,11 +8,11 @@ Write a `MonoBehaviour` and Udonite compiles it to Udon. No dialect to learn and
 
 Udonite is free, networking included.
 
-Worlds can call [Udonite's hosted services](https://admin.udonite.com) too: send a message from a world into
+Worlds can call [Udonite's hosted services](https://udonite.com/dashboard) too: send a message from a world into
 Discord or Pushover, and keep a counter, a score table or a shared switch that survives everyone leaving.
 Free to try with a GitHub account.
 
-**[Documentation](https://docs.udonite.com/compiler)** · **[Install](https://udonite.com)**
+**[Documentation](https://udonite.com/docs/compiler)** · **[Install](https://udonite.com)**
 
 ## Use
 
@@ -66,7 +66,7 @@ public class Scoreboard : UdoniteBehaviour
 
 ## What Udonite will not do
 
-Udon has real limits: nothing to `catch`, no mutable statics, no `Awake`, no tags. Udonite refuses those by name. Every refusal is a console line with a `UDN` code that says what was refused and what to write instead; nothing is dropped silently. A refused behaviour gets no program, the rest of your project still compiles. Details in [Language support](https://docs.udonite.com/compiler/language-support).
+Udon has real limits: nothing to `catch`, no mutable statics, no `Awake`, no tags. Udonite refuses those by name. Every refusal is a console line with a `UDN` code that says what was refused and what to write instead; nothing is dropped silently. A refused behaviour gets no program, the rest of your project still compiles. Details in [Language support](https://udonite.com/docs/compiler/language-support).
 
 ## Supporting Udonite
 

@@ -8,9 +8,9 @@
 
 Udonite は無料です。ネットワーク機能も含みます。
 
-ワールドから [Udonite のホスティングサービス](https://admin.udonite.com)を呼び出すこともできます。ワールドから Discord や Pushover にメッセージを送ったり、カウンターやスコア表、共有スイッチを全員が退出したあとも残したりできます。GitHub アカウントがあれば無料で試せます。
+ワールドから [Udonite のホスティングサービス](https://udonite.com/dashboard?lang=ja)を呼び出すこともできます。ワールドから Discord や Pushover にメッセージを送ったり、カウンターやスコア表、共有スイッチを全員が退出したあとも残したりできます。GitHub アカウントがあれば無料で試せます。
 
-**[ドキュメント](https://docs.udonite.com/compiler?lang=ja)** · **[インストール](https://udonite.com/?lang=ja)**
+**[ドキュメント](https://udonite.com/docs/compiler?lang=ja)** · **[インストール](https://udonite.com/?lang=ja)**
 
 ## 使い方
 
@@ -64,7 +64,7 @@ public class Scoreboard : UdoniteBehaviour
 
 ## できないこと
 
-Udon には実際の制約があります。`catch` できる例外なし、書き換え可能な static なし、`Awake` なし、タグなし。Udonite はそれらを名指しで拒否します。拒否はコンソールに 1 行出て、`UDN` コードとともに「何が拒否されたか」と「代わりに何を書けばよいか」を示します。黙って無視されるものはありません。拒否されたビヘイビアはプログラムを持ちませんが、プロジェクト内の他のビヘイビアは通常どおりコンパイルされます。詳細は[対応状況](https://docs.udonite.com/compiler/language-support?lang=ja)（英語）を参照してください。
+Udon には実際の制約があります。`catch` できる例外なし、書き換え可能な static なし、`Awake` なし、タグなし。Udonite はそれらを名指しで拒否します。拒否はコンソールに 1 行出て、`UDN` コードとともに「何が拒否されたか」と「代わりに何を書けばよいか」を示します。黙って無視されるものはありません。拒否されたビヘイビアはプログラムを持ちませんが、プロジェクト内の他のビヘイビアは通常どおりコンパイルされます。詳細は[対応状況](https://udonite.com/docs/compiler/language-support?lang=ja)（英語）を参照してください。
 
 ## Udonite を支援する
 

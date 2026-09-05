@@ -8,9 +8,9 @@
 
 Udonite는 무료이며, 네트워크 기능도 포함되어 있습니다.
 
-월드에서 [Udonite 호스팅 서비스](https://admin.udonite.com)를 호출할 수도 있습니다. 월드에서 Discord나 Pushover로 메시지를 보내고, 카운터와 점수표, 공유 스위치를 모두가 나간 뒤에도 남길 수 있습니다. GitHub 계정만 있으면 무료로 써 볼 수 있습니다.
+월드에서 [Udonite 호스팅 서비스](https://udonite.com/dashboard?lang=ko)를 호출할 수도 있습니다. 월드에서 Discord나 Pushover로 메시지를 보내고, 카운터와 점수표, 공유 스위치를 모두가 나간 뒤에도 남길 수 있습니다. GitHub 계정만 있으면 무료로 써 볼 수 있습니다.
 
-**[문서](https://docs.udonite.com/compiler?lang=ko)** · **[설치](https://udonite.com/?lang=ko)**
+**[문서](https://udonite.com/docs/compiler?lang=ko)** · **[설치](https://udonite.com/?lang=ko)**
 
 ## 사용법
 
@@ -64,7 +64,7 @@ public class Scoreboard : UdoniteBehaviour
 
 ## Udonite가 하지 않는 것
 
-Udon에는 실제로 존재하는 제약이 있습니다. `catch`할 예외 없음, 변경 가능한 static 없음, `Awake` 없음, 태그 없음. Udonite는 그런 것들을 이름을 짚어 거부합니다. 모든 거부는 콘솔의 한 줄로 나오며, `UDN` 코드와 함께 무엇이 거부되었는지와 대신 무엇을 쓰면 되는지를 알려 줍니다. 조용히 사라지는 것은 없습니다. 거부된 behaviour는 프로그램을 갖지 못하지만, 프로젝트의 나머지는 평소대로 컴파일됩니다. 자세한 내용은 [언어 지원](https://docs.udonite.com/compiler/language-support?lang=ko)(영어)을 참고하세요.
+Udon에는 실제로 존재하는 제약이 있습니다. `catch`할 예외 없음, 변경 가능한 static 없음, `Awake` 없음, 태그 없음. Udonite는 그런 것들을 이름을 짚어 거부합니다. 모든 거부는 콘솔의 한 줄로 나오며, `UDN` 코드와 함께 무엇이 거부되었는지와 대신 무엇을 쓰면 되는지를 알려 줍니다. 조용히 사라지는 것은 없습니다. 거부된 behaviour는 프로그램을 갖지 못하지만, 프로젝트의 나머지는 평소대로 컴파일됩니다. 자세한 내용은 [언어 지원](https://udonite.com/docs/compiler/language-support?lang=ko)(영어)을 참고하세요.
 
 ## Udonite 후원하기
 
